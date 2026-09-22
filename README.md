@@ -87,3 +87,25 @@ export class UserProfileComponent {
   readonly auth = inject(SerafortAuthService);
 }
 ```
+
+## Contributing
+
+Before committing, changes are checked with `pnpm run type-check && pnpm run test`.
+This is wired up two ways — pick whichever fits your setup:
+
+- **Husky (npm-idiomatic, default for contributors who run `pnpm install`)**:
+  the `prepare` script installs a Husky hook automatically, so once you've run
+  `pnpm install` in a git checkout, `git commit` runs the checks for you.
+- **`.githooks/` (portable, no Husky/Node required to install)**: run
+  `git config core.hooksPath .githooks` once to point git directly at the
+  checked-in `.githooks/pre-commit` script, which runs the same checks.
+
+Both hooks run the same two commands, so pick one — you don't need both active
+at once.
+
+CI (`.github/workflows/ci.yml`) runs `type-check`, `test`, and `build` on
+every push to `main` and on every pull request.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
