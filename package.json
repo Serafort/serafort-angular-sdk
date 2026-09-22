@@ -1,0 +1,45 @@
+{
+  "name": "@serafort/angular",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Angular 17+ Signals, functional guards, and HTTP interceptors for Serafort IAM.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "type-check": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@serafort/core": "link:../Javascript"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=17.0.0",
+    "@angular/core": ">=17.0.0",
+    "@angular/router": ">=17.0.0",
+    "rxjs": ">=7.8.0"
+  },
+  "devDependencies": {
+    "@angular/common": "^18.2.0",
+    "@angular/core": "^18.2.0",
+    "@angular/router": "^18.2.0",
+    "rxjs": "^7.8.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0",
+    "zone.js": "^0.14.10"
+  }
+}
