@@ -26,7 +26,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@serafort/core": "github:Serafort/serafort-javascript-sdk#5a4964fc41f08754c174d29b4af73074df17a9df"
+    "@serafort/core": "^0.1.0"
   },
   "peerDependencies": {
     "@angular/common": ">=17.0.0",
@@ -38,8 +38,8 @@
     "@angular/common": "^18.2.0",
     "@angular/core": "^18.2.0",
     "@angular/router": "^18.2.0",
-    "rxjs": "^7.8.1",
     "husky": "^9.1.7",
+    "rxjs": "^7.8.1",
     "tsup": "^8.3.5",
     "typescript": "^5.7.0",
     "vitest": "^2.1.0",
